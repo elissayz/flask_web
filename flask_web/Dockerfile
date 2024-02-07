@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM ubuntu:16.04
 
 MAINTAINER Elissa Yanez "Elissa.Yanez.25@cmc.edu"
 
@@ -12,8 +12,6 @@ WORKDIR /app
 
 RUN pip3 install --upgrade pip==20.3.4 && \
     pip3 install -r requirements.txt
-
-RUN pip install -r requirements.txt
 
 COPY . /app
 
